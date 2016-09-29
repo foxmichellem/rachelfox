@@ -1,0 +1,93 @@
+@import "flexgrid";
+
+body{
+  font-family: 'Poiret One', sans-serif;
+  background-color: #F7F7F2;
+  font-weight: 300;
+}
+.main {
+  display: block;
+  margin:auto;
+  text-align: center;
+
+  &__title {
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+}
+
+.about {
+  padding-bottom: 1.25em;
+
+  &__highlights{
+    text-align: center;
+
+    &__divider {
+      display: inline-block;
+      background-color: #000;
+      border-radius: 50%;
+      height: .25em;
+      width: .25em;
+    }
+
+    &__item {
+      display: inline-block;
+    }
+  }
+}
+
+.work {
+  padding-top: 1.25em;
+  border-top: 1px solid #e5e5e5;
+
+  &__company {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__instance{
+    padding-top: .5em;
+    margin-bottom: 1.25em;
+
+    &--1 {
+      border-left: 7px solid #FFDCDD;
+    }
+
+    &--2{
+      border-left: 7px solid darken(#FFDCDD, 5%);
+    }
+
+    &--3{
+      border-left: 7px solid darken(#FFDCDD, 10%);
+    }
+  }
+
+  &__role{
+    margin: 0;
+  }
+
+  &__project{
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+}
+
+.nav {
+  position: fixed;
+  height: 100%;
+  width: 16.6667%;
+
+  > ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__header {
+    font-family: 'Permanent Marker';
+  }
+}
