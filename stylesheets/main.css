@@ -914,10 +914,20 @@ body {
   background-color: #F7F7F2;
   font-weight: 300; }
 
+a {
+  text-decoration: none;
+  color: #000;
+  border: 5px solid #0F7173;
+  padding: .5em; }
+  a:hover {
+    text-decoration: none; }
+
 .main {
   display: block;
   margin: auto;
   text-align: center; }
+  .main__title {
+    font-size: 3em; }
   .main__image {
     max-width: 100%;
     height: auto;
@@ -935,6 +945,9 @@ body {
       width: .25em; }
     .about__highlights__item {
       display: inline-block; }
+
+.skills__instance {
+  width: 75%; }
 
 .work {
   padding-top: 1.25em;
@@ -956,6 +969,32 @@ body {
   .work__project {
     margin-top: 0;
     margin-bottom: 1em; }
+
+.edu {
+  padding: 1.25em 0em 3em; }
+  .edu__instance--1 {
+    border-left: 7px solid #0F7173; }
+  .edu__instance--2 {
+    border-left: 7px solid #16a6a9; }
+  .edu__school {
+    margin-bottom: 0; }
+  .edu__degree {
+    margin: .5em 0 1em 0; }
+  .edu__list > ul {
+    list-style: none;
+    padding-left: 0; }
+
+.contact {
+  height: 40em;
+  border-top: 1px solid #e5e5e5;
+  text-align: center; }
+  .contact__header {
+    font-size: 3em;
+    display: inline-block;
+    padding: .25em 1em;
+    border-bottom: 10px solid #BEC5AD; }
+  .contact__copy {
+    text-align: center; }
 
 .nav {
   position: fixed;

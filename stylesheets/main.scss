@@ -5,12 +5,25 @@ body{
   background-color: #F7F7F2;
   font-weight: 300;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+  border: 5px solid #0F7173;
+  padding: .5em;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .main {
   display: block;
   margin:auto;
   text-align: center;
 
   &__title {
+    font-size: 3em;
   }
 
   &__image {
@@ -40,9 +53,17 @@ body{
   }
 }
 
+.skills {
+
+  &__instance {
+    width: 75%;
+  }
+}
+
 .work {
   padding-top: 1.25em;
   border-top: 1px solid #e5e5e5;
+  // border-bottom: 1px solid #e5e5e5;
 
   &__company {
     margin: 0;
@@ -73,6 +94,47 @@ body{
   &__project{
     margin-top: 0;
     margin-bottom: 1em;
+  }
+}
+
+.edu {
+  padding: 1.25em 0em 3em;
+
+  &__instance--1 {
+    border-left: 7px solid #0F7173;
+  }
+
+  &__instance--2 {
+    border-left: 7px solid lighten(#0F7173, 12%);
+  }
+
+  &__school {
+    margin-bottom: 0;
+  }
+
+  &__degree{
+    margin: .5em 0 1em 0;
+  }
+
+  &__list > ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+.contact {
+  height: 40em;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+
+  &__header{
+    font-size: 3em;
+    display: inline-block;
+    padding: .25em 1em;
+    border-bottom: 10px solid #BEC5AD;
+  }
+  &__copy{
+    text-align: center;;
   }
 }
 
