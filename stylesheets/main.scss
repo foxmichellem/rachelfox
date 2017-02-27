@@ -1,155 +1,51 @@
 @import "flexgrid";
+@import url('https://fonts.googleapis.com/css?family=Cantarell');
 
-body{
-  font-family: 'Poiret One', sans-serif;
-  background-color: #F7F7F2;
-  font-weight: 300;
+body {
+  font-family: 'Cantarell', sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
-  border: 5px solid #0F7173;
-  padding: .5em;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.main {
-  display: block;
-  margin:auto;
-  text-align: center;
-
-  &__title {
-    font-size: 3em;
-  }
-
-  &__image {
-    max-width: 100%;
-    height: auto;
-    max-height: 500px;
-  }
+ul {
+  padding-left: 1em;
 }
 
 .about {
-  padding-bottom: 1.25em;
-
-  &__highlights{
-    text-align: center;
-
-    &__divider {
-      display: inline-block;
-      background-color: #000;
-      border-radius: 50%;
-      height: .25em;
-      width: .25em;
-    }
-
-    &__item {
-      display: inline-block;
-    }
-  }
-}
-
-.skills {
-
-  &__instance {
-    width: 75%;
-  }
-}
-
-.work {
-  padding-top: 1.25em;
-  border-top: 1px solid #e5e5e5;
-  // border-bottom: 1px solid #e5e5e5;
-
-  &__company {
-    margin: 0;
-    padding: 0;
-  }
-
-  &__instance{
-    padding-top: .5em;
-    margin-bottom: 1.25em;
-
-    &--1 {
-      border-left: 7px solid #FFDCDD;
-    }
-
-    &--2{
-      border-left: 7px solid darken(#FFDCDD, 5%);
-    }
-
-    &--3{
-      border-left: 7px solid darken(#FFDCDD, 10%);
-    }
-  }
-
-  &__role{
-    margin: 0;
-  }
-
-  &__project{
-    margin-top: 0;
-    margin-bottom: 1em;
-  }
-}
-
-.edu {
-  padding: 1.25em 0em 3em;
-
-  &__instance--1 {
-    border-left: 7px solid #0F7173;
-  }
-
-  &__instance--2 {
-    border-left: 7px solid lighten(#0F7173, 12%);
-  }
-
-  &__school {
-    margin-bottom: 0;
-  }
-
-  &__degree{
-    margin: .5em 0 1em 0;
-  }
-
-  &__list > ul {
-    list-style: none;
-    padding-left: 0;
-  }
-}
-
-.contact {
-  height: 40em;
-  border-top: 1px solid #e5e5e5;
-  text-align: center;
-
-  &__header{
-    font-size: 3em;
-    display: inline-block;
-    padding: .25em 1em;
-    border-bottom: 10px solid #BEC5AD;
-  }
-  &__copy{
-    text-align: center;;
-  }
-}
-
-.nav {
-  position: fixed;
+  border-right: 10px solid;
   height: 100%;
-  width: 16.6667%;
 
-  > ul {
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
+
+  &__image {
+    img {
+      width: 100%;
+    }
   }
 
-  &__header {
-    font-family: 'Permanent Marker';
+  &__copy {
+
+    &__headline {
+      margin-bottom: 0;
+    }
+
+    &__body {
+      margin-top: 0;
+    }
+  }
+}
+
+.resume {
+  height: 100%;
+  overflow: scroll;
+
+  &__title {
+    text-align: right;
+    background-image: radial-gradient(#eee 15%, transparent 15%),
+    radial-gradient(#eee 40%, transparent 40%);
+    background-size:60px 60px;
+    background-position: 0 0, 30px 30px;
+  }
+
+  &__contents {
+    padding-left: 1em;
+    border-left: 2px solid;
   }
 }

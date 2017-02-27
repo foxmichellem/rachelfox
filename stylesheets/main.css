@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cantarell");
 .container-fluid,
 .container {
   margin-right: auto;
@@ -910,101 +911,31 @@
     -ms-flex-order: 1;
     order: 1; } }
 body {
-  font-family: 'Poiret One', sans-serif;
-  background-color: #F7F7F2;
-  font-weight: 300; }
+  font-family: 'Cantarell', sans-serif; }
 
-a {
-  text-decoration: none;
-  color: #000;
-  border: 5px solid #0F7173;
-  padding: .5em; }
-  a:hover {
-    text-decoration: none; }
-
-.main {
-  display: block;
-  margin: auto;
-  text-align: center; }
-  .main__title {
-    font-size: 3em; }
-  .main__image {
-    max-width: 100%;
-    height: auto;
-    max-height: 500px; }
+ul {
+  padding-left: 1em; }
 
 .about {
-  padding-bottom: 1.25em; }
-  .about__highlights {
-    text-align: center; }
-    .about__highlights__divider {
-      display: inline-block;
-      background-color: #000;
-      border-radius: 50%;
-      height: .25em;
-      width: .25em; }
-    .about__highlights__item {
-      display: inline-block; }
-
-.skills__instance {
-  width: 75%; }
-
-.work {
-  padding-top: 1.25em;
-  border-top: 1px solid #e5e5e5; }
-  .work__company {
-    margin: 0;
-    padding: 0; }
-  .work__instance {
-    padding-top: .5em;
-    margin-bottom: 1.25em; }
-    .work__instance--1 {
-      border-left: 7px solid #FFDCDD; }
-    .work__instance--2 {
-      border-left: 7px solid #ffc3c4; }
-    .work__instance--3 {
-      border-left: 7px solid #ffa9ab; }
-  .work__role {
-    margin: 0; }
-  .work__project {
-    margin-top: 0;
-    margin-bottom: 1em; }
-
-.edu {
-  padding: 1.25em 0em 3em; }
-  .edu__instance--1 {
-    border-left: 7px solid #0F7173; }
-  .edu__instance--2 {
-    border-left: 7px solid #16a6a9; }
-  .edu__school {
+  border-right: 10px solid;
+  height: 100%; }
+  .about__image img {
+    width: 100%; }
+  .about__copy__headline {
     margin-bottom: 0; }
-  .edu__degree {
-    margin: .5em 0 1em 0; }
-  .edu__list > ul {
-    list-style: none;
-    padding-left: 0; }
+  .about__copy__body {
+    margin-top: 0; }
 
-.contact {
-  height: 40em;
-  border-top: 1px solid #e5e5e5;
-  text-align: center; }
-  .contact__header {
-    font-size: 3em;
-    display: inline-block;
-    padding: .25em 1em;
-    border-bottom: 10px solid #BEC5AD; }
-  .contact__copy {
-    text-align: center; }
-
-.nav {
-  position: fixed;
+.resume {
   height: 100%;
-  width: 16.6667%; }
-  .nav > ul {
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none; }
-  .nav__header {
-    font-family: 'Permanent Marker'; }
+  overflow: scroll; }
+  .resume__title {
+    text-align: right;
+    background-image: radial-gradient(#eee 15%, transparent 15%), radial-gradient(#eee 40%, transparent 40%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px; }
+  .resume__contents {
+    padding-left: 1em;
+    border-left: 2px solid; }
 
 /*# sourceMappingURL=main.css.map */
