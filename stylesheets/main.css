@@ -916,26 +916,46 @@ body {
 ul {
   padding-left: 1em; }
 
+h2 {
+  margin-top: 0; }
+
 .about {
-  border-right: 10px solid;
-  height: 100%; }
+  border-right: 3px solid #37bbe4;
+  height: 100%;
+  padding-top: 2em; }
+  .about__border {
+    border-right: 10px solid; }
   .about__image img {
     width: 100%; }
-  .about__copy__headline {
-    margin-bottom: 0; }
-  .about__copy__body {
-    margin-top: 0; }
+  .about__copy {
+    color: #8f9191; }
+    .about__copy h3 {
+      display: inline; }
+    .about__copy__headline {
+      margin-bottom: 0; }
+      .about__copy__headline .larger {
+        font-size: 2.5em;
+        color: black; }
+    .about__copy__body {
+      margin-top: 0; }
+      .about__copy__body .larger {
+        font-size: 2em;
+        color: black; }
 
 .resume {
   height: 100%;
-  overflow: scroll; }
-  .resume__title {
-    text-align: right;
-    background-image: radial-gradient(#eee 15%, transparent 15%), radial-gradient(#eee 40%, transparent 40%);
-    background-size: 60px 60px;
-    background-position: 0 0, 30px 30px; }
+  overflow: scroll;
+  margin-top: 2em; }
   .resume__contents {
     padding-left: 1em;
-    border-left: 2px solid; }
+    border-left: 3px solid; }
+    .resume__contents--job {
+      border-left: 2px solid #ee8012; }
+    .resume__contents--edu {
+      border-left: 2px solid #e7b300; }
+    .resume__contents--volunteer {
+      border-left: 2px solid #3dbd5d; }
+    .resume__contents--affiliations {
+      border-left: 2px solid #fe9f97; }
 
 /*# sourceMappingURL=main.css.map */

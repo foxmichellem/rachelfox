@@ -9,10 +9,20 @@ ul {
   padding-left: 1em;
 }
 
-.about {
-  border-right: 10px solid;
-  height: 100%;
 
+h2 {
+  margin-top: 0;
+}
+
+
+.about {
+  border-right: 3px solid #37bbe4;
+  height: 100%;
+  padding-top: 2em;
+
+  &__border {
+    border-right: 10px solid;
+  }
 
   &__image {
     img {
@@ -21,13 +31,27 @@ ul {
   }
 
   &__copy {
+    color: #8f9191;
+    h3 {
+      display: inline;
+    }
 
     &__headline {
       margin-bottom: 0;
+
+      .larger {
+        font-size: 2.5em;
+        color: black;
+      }
     }
 
     &__body {
       margin-top: 0;
+
+      .larger {
+        font-size: 2em;
+        color: black;
+      }
     }
   }
 }
@@ -35,17 +59,27 @@ ul {
 .resume {
   height: 100%;
   overflow: scroll;
+  margin-top: 2em;
 
-  &__title {
-    text-align: right;
-    background-image: radial-gradient(#eee 15%, transparent 15%),
-    radial-gradient(#eee 40%, transparent 40%);
-    background-size:60px 60px;
-    background-position: 0 0, 30px 30px;
-  }
 
   &__contents {
     padding-left: 1em;
-    border-left: 2px solid;
+    border-left: 3px solid;
+
+    &--job {
+      border-left: 2px solid #ee8012;
+    }
+
+    &--edu {
+      border-left: 2px solid #e7b300;
+    }
+
+    &--volunteer {
+      border-left: 2px solid #3dbd5d;
+    }
+
+    &--affiliations {
+      border-left: 2px solid #fe9f97;
+    }
   }
 }
