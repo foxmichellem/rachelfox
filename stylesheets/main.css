@@ -921,8 +921,9 @@ h2 {
 
 .about {
   border-right: 3px solid #37bbe4;
+  padding-top: 2em;
   height: 100%;
-  padding-top: 2em; }
+  max-height: 100%; }
   .about__border {
     border-right: 10px solid; }
   .about__image img {
@@ -944,8 +945,11 @@ h2 {
 
 .resume {
   height: 100%;
-  overflow: scroll;
+  overflow: visible;
   margin-top: 2em; }
+  @media only screen and (min-width: 64em) {
+    .resume {
+      overflow: scroll; } }
   .resume__contents {
     padding-left: 1em;
     border-left: 3px solid; }

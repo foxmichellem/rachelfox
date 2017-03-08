@@ -17,8 +17,9 @@ h2 {
 
 .about {
   border-right: 3px solid #37bbe4;
-  height: 100%;
   padding-top: 2em;
+  height: 100%;
+  max-height: 100%;
 
   &__border {
     border-right: 10px solid;
@@ -58,8 +59,12 @@ h2 {
 
 .resume {
   height: 100%;
-  overflow: scroll;
+  overflow: visible;
   margin-top: 2em;
+
+  @media only screen and (min-width: 64em) {
+    overflow: scroll;
+  }
 
 
   &__contents {
