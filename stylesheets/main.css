@@ -921,14 +921,20 @@ h2 {
   margin-top: 0; }
 
 .about {
-  border-right: 3px solid #37bbe4;
   padding-top: 2em;
-  height: 100%;
   max-height: 100%; }
-  .about__border {
-    border-right: 10px solid; }
-  .about__image img {
-    width: 100%; }
+  @media only screen and (min-width: 64em) {
+    .about {
+      border-right: 3px solid #37bbe4;
+      height: 100%; } }
+  @media only screen and (min-width: 64em) {
+    .about__border {
+      border-right: 10px solid; } }
+  .about__image {
+    text-align: center; }
+    .about__image img {
+      max-width: 100%;
+      max-height: 400px; }
   .about__copy {
     padding-top: 1em;
     color: #8f9191; }
