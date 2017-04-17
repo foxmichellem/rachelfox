@@ -911,7 +911,8 @@
     -ms-flex-order: 1;
     order: 1; } }
 body {
-  font-family: 'Cantarell', sans-serif; }
+  font-family: 'Cantarell', sans-serif;
+  margin: 0; }
 
 ul {
   padding-left: 1em; }
@@ -929,37 +930,28 @@ h2 {
   .about__image img {
     width: 100%; }
   .about__copy {
+    padding-top: 1em;
     color: #8f9191; }
     .about__copy h3 {
       display: inline; }
     .about__copy__headline {
       margin-bottom: 0; }
       .about__copy__headline .larger {
-        font-size: 2.5em;
+        font-size: 1.25em;
         color: black; }
     .about__copy__body {
       margin-top: 0; }
       .about__copy__body .larger {
-        font-size: 2em;
+        font-size: 1.25em;
         color: black; }
 
 .resume {
+  padding-left: 1em;
   height: 100%;
   overflow: visible;
   margin-top: 2em; }
   @media only screen and (min-width: 64em) {
     .resume {
       overflow: scroll; } }
-  .resume__contents {
-    padding-left: 1em;
-    border-left: 3px solid; }
-    .resume__contents--job {
-      border-left: 2px solid #ee8012; }
-    .resume__contents--edu {
-      border-left: 2px solid #e7b300; }
-    .resume__contents--volunteer {
-      border-left: 2px solid #3dbd5d; }
-    .resume__contents--affiliations {
-      border-left: 2px solid #fe9f97; }
 
 /*# sourceMappingURL=main.css.map */

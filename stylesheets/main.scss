@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Cantarell', sans-serif;
+  margin: 0;
 }
 
 ul {
@@ -13,7 +14,6 @@ ul {
 h2 {
   margin-top: 0;
 }
-
 
 .about {
   border-right: 3px solid #37bbe4;
@@ -32,7 +32,9 @@ h2 {
   }
 
   &__copy {
+    padding-top: 1em;
     color: #8f9191;
+
     h3 {
       display: inline;
     }
@@ -41,7 +43,7 @@ h2 {
       margin-bottom: 0;
 
       .larger {
-        font-size: 2.5em;
+        font-size: 1.25em;
         color: black;
       }
     }
@@ -50,7 +52,7 @@ h2 {
       margin-top: 0;
 
       .larger {
-        font-size: 2em;
+        font-size: 1.25em;
         color: black;
       }
     }
@@ -58,6 +60,7 @@ h2 {
 }
 
 .resume {
+  padding-left: 1em;
   height: 100%;
   overflow: visible;
   margin-top: 2em;
@@ -66,25 +69,4 @@ h2 {
     overflow: scroll;
   }
 
-
-  &__contents {
-    padding-left: 1em;
-    border-left: 3px solid;
-
-    &--job {
-      border-left: 2px solid #ee8012;
-    }
-
-    &--edu {
-      border-left: 2px solid #e7b300;
-    }
-
-    &--volunteer {
-      border-left: 2px solid #3dbd5d;
-    }
-
-    &--affiliations {
-      border-left: 2px solid #fe9f97;
-    }
-  }
 }
